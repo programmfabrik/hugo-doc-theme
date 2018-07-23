@@ -1,0 +1,15 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name: "Hugo Doc Theme"
+license: "MIT"
+licenselink: "https://github.com/programmfabrik/hugo-doc-theme/blob/master/LICENSE"
+description: "Documentation oriented theme for the HUGO cms. Supports nested menus, mermaids, and sequence diagrams."
+# homepage = "http://example.com/"
+# tags: []
+# features = []
+min_version: "0.41"
+
+author:
+  name: "Martin Rode"
+

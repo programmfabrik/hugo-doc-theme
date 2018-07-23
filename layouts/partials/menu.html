@@ -1,5 +1,8 @@
 <aside class="main-menu js-menu">
-  <ul class="menu-top-level">
+	<div class="menu-header">
+		{{ partial "menu_header.html" }}
+	</div>
+	<ul class="menu-top-level">
     {{ $p := . }}
     {{ range .Site.Menus.main.ByWeight }}
         {{ partial "menu_dive.html" (dict "m" . "p" $p)}}

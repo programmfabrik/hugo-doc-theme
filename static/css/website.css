@@ -104,27 +104,6 @@ header input[type="search"]::placeholder {
 	color: hsl(219,20%,78%);
 }
 
-.logo {
-	display: flex;
-	align-items: center;
-	font-size: 28px;
-	font-weight: bold;
-	color: hsl(220,8%,76%);
-	font-family: 'Titillium Web', 'Roboto', 'Archivo', 'Hammersmith One', 'Signika', 'Architects Daughter', cursive;
-}
-
-.logo img {
-	margin: 2px 12px 0 0;
-}
-
-.language-switcher {
-	flex-shrink: 0;
-}
-
-.language-switcher span {
-	color: hsl(219,20%,78%);
-}
-
 .main-menu {
 	width: 300px;
 	flex-shrink: 0;
@@ -178,7 +157,7 @@ li.is-open > .sub-menu {
 
 .menu-entry > a > .menu-name:hover {
 	background: #dadada;
-} 
+}
 
 .menu-name {
 	text-overflow: ellipsis;
@@ -192,7 +171,7 @@ li.is-open > .sub-menu {
 }
 
 .current > a > .menu-name:hover {
-	background: hsl(220,21%,28%);	
+	background: hsl(220,21%,28%);
 }
 .menu-entry-inner span {
 	text-overflow: ellipsis;

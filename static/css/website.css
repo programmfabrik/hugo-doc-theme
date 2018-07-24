@@ -91,17 +91,17 @@ header input[type="search"] {
 	font-size: inherit;
 	background: transparent url(../images/search.svg) no-repeat 10px 9px;
 	padding: 8px 10px 8px 35px;
-	border-bottom: 1px solid hsl(219,20%,88%);
+	border-bottom: 1px solid hsl(220,8%,87%);
 	outline: none;
 }
 
 
 header input[type="search"]:focus {
-	background-color: hsla(211,80%,43%,.03);
+	background-color: hsl(215,17%,94%);
 }
 
 header input[type="search"]::placeholder {
-	color: hsl(219,20%,78%);
+	color: hsl(220,8%,73%);
 }
 
 .main-menu {
@@ -155,13 +155,14 @@ li.is-open > .sub-menu {
 	overflow: hidden;
 }
 
-.menu-entry > a > .menu-name:hover {
-	background: #dadada;
-}
-
 .menu-name {
 	text-overflow: ellipsis;
 	padding: 0 6px;
+}
+
+a:hover > .menu-name,
+a:hover > .menu-entry-toggle {
+	background: hsl(220,14%,90%);
 }
 
 .current > a > .menu-name {
@@ -200,17 +201,18 @@ li.is-open > .sub-menu {
 	width: 5px;
 	height: 8px;
 	right: 0;
-	top: 11px;
+	top: 10px;
 	background: url(../images/arrow.svg) no-repeat -9px 0;
 }
 
 li.current > a > .menu-entry-toggle:after {
-	background-position: 0 -5px;
+	background-position: -9px -9px;
 }
 
 li.is-open > a > .menu-entry-toggle:after {
 	width: 8px;
 	height: 5px;
+	top: 12px;
 	background-position: 0 0;
 }
 

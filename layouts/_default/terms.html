@@ -2,9 +2,11 @@
 <main class="markdown-body" aria-role="main">
 	{{ .Content }}
 	<ul>
-	{{ range $key, $value := .Data.Terms.Alphabetical }}
-	<li><a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a></li>
-	{{ end }}
-</ul>
+		{{ range $key, $value := .Data.Terms.Alphabetical }}
+		<li>
+			<a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+		</li>
+		{{ end }}
+	</ul>
 </main>
 {{ end }}

@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main class="markdown-body" aria-role="main">
+	<h1>{{ .Page.Title }}</h1>
+	<ul>
+		{{ range .Pages }}
+		<li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a><br>{{ .Summary }}</li>
+		{{ end }}
+	</ul>
+</main>
+{{ end }}

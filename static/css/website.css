@@ -16,11 +16,13 @@ body {
 	-webkit-text-size-adjust: 100%;
 	background: hsl(200,10%,97%);
 	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 .content {
 	display: flex;
-	flex: 1 1;
 }
 
 h1,
@@ -44,6 +46,10 @@ header {
 	margin: 0 3px 0 12px;
 	font-size: 0.9em;
 	text-align: right;
+}
+
+footer {
+	margin-top: auto;
 }
 
 a {

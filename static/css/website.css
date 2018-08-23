@@ -227,6 +227,7 @@ main {
 	box-shadow: 0 5px 50px hsl(226,23%,89%);
 	padding: 23px 34px;
 	word-wrap: break-word;
+	overflow: hidden;
 }
 
 main .pl-c {
@@ -751,18 +752,17 @@ main .highlight pre {
 
 main .highlight pre,
 main pre {
-	padding: 16px;
 	overflow: auto;
 	font-size: 85%;
 	line-height: 1.45;
 	background-color: #f6f8fa;
 	border-radius: 3px;
+	overscroll-behavior-x: contain;
 }
 
 main pre code {
-	display: inline;
-	max-width: auto;
-	padding: 0;
+	padding: 16px !important;
+	display: block;
 	margin: 0;
 	overflow: visible;
 	line-height: inherit;
@@ -837,6 +837,5 @@ main hr {
 }
 
 .hljs {
-	padding: 0;
 	background: none;
 }

@@ -1,15 +1,5 @@
 /*
 
-Activate Syntax Highlight
-=========================
-
-*/
-
-hljs.initHighlightingOnLoad();
-
-
-/*
-
 Folder fold/unfold
 ==================
 

@@ -845,3 +845,9 @@ main hr {
 .hljs {
 	background: none;
 }
+
+/* special case: allow comments in json */
+.language-json .err {
+	color: hsl(60, 8%, 57%);
+	background: none;
+}

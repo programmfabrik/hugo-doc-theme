@@ -89,10 +89,23 @@ function saveScrollPosition(){
 	sessionStorage.setItem('menu-scroll', menu.scrollTop);
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+	var nodes = document.getElementsByTagName("code");
+    Array.prototype.forEach.call(nodes, function(node) {
+        node.value = node.textContent;
+    	var mode = node.getAttribute("data-lang");
+    	if (!mode) {
+    		return
+		}
 
-
-
-
+        CodeMirror.fromTextArea(node, {
+			mode: mode,
+			json: true,
+            lineNumbers: true,
+            readOnly: true
+        });
+    });
+});
 
 /*
 

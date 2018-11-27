@@ -3,6 +3,7 @@
 	<head>
 		<link href="{{ "/css/syntax.css" | relURL}}" rel="stylesheet" type="text/css" />
 		<link href="{{ "/css/website.css" | relURL }}" rel="stylesheet" type="text/css" />
+		<link href="{{ "/css/codemirror.css" | relURL }}" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 		<link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" />
 		{{ partial "head.html" . }}
@@ -57,6 +58,14 @@
 		<script src="{{ "javascript/sequence/underscore-min.js" | relURL }}"></script>
 		<script src="{{ "javascript/sequence/webfont.js" | relURL }}"></script>
 		<script src="{{ "javascript/sequence/sequence-diagram-min.js" | relURL }}"></script>
+
+		<!-- Codemirror -->
+		<script src="{{ "javascript/codemirror/codemirror.js" | relURL }}"></script>
+		<!-- Codemirror modes: https://codemirror.net/mode/index.html -->
+		<script src="https://codemirror.net/mode/javascript/javascript.js"></script>
+		<script src="https://codemirror.net/mode/python/python.js"></script>
+		<script src="https://codemirror.net/mode/clike/clike.js"></script>
+		<script src="https://codemirror.net/mode/go/go.js"></script>
 
 		<!-- MENU STUFF -->
 		<script src="{{ "/javascript/main.js" | relURL }}"></script>

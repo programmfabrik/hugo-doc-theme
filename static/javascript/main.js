@@ -97,12 +97,16 @@ document.addEventListener("DOMContentLoaded", function() {
     	if (!mode) {
     		return
 		}
+		if (mode === "json") {
+            mode = "javascript"
+		}
 
         CodeMirror.fromTextArea(node, {
 			mode: mode,
 			json: true,
             lineNumbers: true,
             readOnly: true,
+			theme: "abcdef",
             cursorBlinkRate: -1
         });
     });

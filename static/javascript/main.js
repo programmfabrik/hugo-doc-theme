@@ -102,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
 			mode: mode,
 			json: true,
             lineNumbers: true,
-            readOnly: true
+            readOnly: true,
+            cursorBlinkRate: -1
         });
     });
 });

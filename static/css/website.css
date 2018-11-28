@@ -851,3 +851,13 @@ main hr {
 	color: hsl(60, 8%, 57%);
 	background: none;
 }
+
+/* Fixes for CodeMirror */
+.CodeMirror {
+	height: auto;
+	min-height:30px;
+}
+
+.CodeMirror-line {
+	background-color: transparent!important; /* Fixes the selection */
+}

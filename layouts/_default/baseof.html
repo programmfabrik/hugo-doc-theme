@@ -6,6 +6,7 @@
 		<link href="{{ "/css/website.css" | relURL }}" rel="stylesheet" type="text/css" />
 		<link href="https://codemirror.net/theme/abcdef.css" rel="stylesheet" type="text/css"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+		<link rel="stylesheet" href="{{ "/lib/font-awesome/css/font-awesome.min.css" | relURL}}">
 		<link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" />
 		{{ partial "head.html" . }}
 
@@ -61,14 +62,14 @@
 		<script src="{{ "javascript/sequence/sequence-diagram-min.js" | relURL }}"></script>
 
 		<!-- Codemirror -->
-		<script src="{{ "javascript/codemirror/codemirror.js" | relURL }}"></script>
+		<script src="{{ "/lib/codemirror/codemirror.js" | relURL }}"></script>
 		<!-- Codemirror modes: https://codemirror.net/mode/index.html -->
-		<script src="https://codemirror.net/mode/javascript/javascript.js"></script>
-		<script src="https://codemirror.net/mode/python/python.js"></script>
-		<script src="https://codemirror.net/mode/clike/clike.js"></script>
-		<script src="https://codemirror.net/mode/yaml/yaml.js"></script>
-		<script src="https://codemirror.net/mode/css/css.js"></script>
-		<script src="https://codemirror.net/mode/go/go.js"></script>
+		<script src="{{ "/lib/codemirror/mode/javascript/javascript.js" | relURL}}"></script>
+		<script src="{{ "/lib/codemirror/mode/python/python.js" | relURL}}"></script>
+		<script src="{{ "/lib/codemirror/mode/clike/clike.js" | relURL}}"></script>
+		<script src="{{ "/lib/codemirror/mode/yaml/yaml.js" | relURL}}"></script>
+		<script src="{{ "/lib/codemirror/mode/css/css.js" | relURL}}"></script>
+		<script src="{{ "/lib/codemirror/mode/go/go.js" | relURL}}"></script>
 
 		<!-- MENU STUFF -->
 		<script src="{{ "/javascript/main.js" | relURL }}"></script>

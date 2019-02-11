@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			json: true,
             lineNumbers: true,
             readOnly: true,
-			theme: "abcdef",
+			theme: "base16-light",
             cursorBlinkRate: -1
         });
     });

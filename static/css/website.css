@@ -856,6 +856,7 @@ main hr {
 .CodeMirror {
 	height: auto;
 	min-height:30px;
+	font-size: 18px;
 }
 
 .CodeMirror-line {

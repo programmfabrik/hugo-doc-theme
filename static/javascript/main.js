@@ -66,29 +66,6 @@ Folder fold/unfold
 	}
 })()
 
-
-/*
-
-Save Menu scroll-position
-=========================
-
-*/
-
-
-var menu = document.querySelector('.js-menu');
-var scrollPosition = parseInt(sessionStorage.getItem('menu-scroll'), 10);
-
-if(scrollPosition){
-	menu.scrollTop = scrollPosition;
-}
-
-menu.classList.add('is-loaded');
-menu.addEventListener('scroll', saveScrollPosition);
-
-function saveScrollPosition(){
-	sessionStorage.setItem('menu-scroll', menu.scrollTop);
-}
-
 document.addEventListener("DOMContentLoaded", function() {
 	var nodes = document.getElementsByTagName("code");
     Array.prototype.forEach.call(nodes, function(node) {

@@ -115,8 +115,6 @@ header input[type="search"]::placeholder {
 	flex-shrink: 0;
 	position: relative;
 	padding: 0 15px;
-	opacity: 0;
-	transition: opacity 0.5s cubic-bezier(0, 1.17, 0.58, 1);
 }
 
 aside {
@@ -126,10 +124,6 @@ aside {
 
 .menu-top-level {
 	flex: 1 1;
-}
-
-.main-menu.is-loaded {
-	opacity: 1;
 }
 
 .sub-menu {

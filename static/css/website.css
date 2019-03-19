@@ -130,6 +130,7 @@ aside {
 	height: 0;
 	overflow: hidden;
 	transition: height 0.4s;
+	clear: left;
 }
 
 li.is-open > .sub-menu {
@@ -145,14 +146,18 @@ li.is-open > .sub-menu {
 	padding-left: 20px;
 }
 
-.menu-entry > a {
+.menu-entry {
 	line-height: 28px;
-	display: flex;
+	clear: left;
+}
+
+.menu-entry a {
 	text-decoration: none;
 }
 
-.menu-entry > a > span {
-	overflow: hidden;
+.menu-entry a,
+.menu-entry span {
+	float: left;
 }
 
 .menu-name {
@@ -165,13 +170,15 @@ a:hover > .menu-entry-toggle {
 	background: hsl(220,14%,90%);
 }
 
-.current > a > .menu-name {
+.current > a > .menu-name,
+.current > span > a > .menu-name { /* only needed for google translation */
 	font-weight: bold;
 	background: hsl(220,21%,28%);
 	color: hsl(178,7%,97%);
 }
 
-.current > a > .menu-name:hover {
+.current > a > .menu-name:hover,
+.current > span:hover > span > .menu-name { /* only needed for google translation */
 	background: hsl(220,21%,28%);
 }
 .menu-entry-inner span {

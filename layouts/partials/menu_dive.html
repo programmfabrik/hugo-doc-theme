@@ -1,4 +1,4 @@
-<li title="{{ printf "Identifier: %s Weight: %d" .m.Identifier .m.Weight }}" menu-identifier="{{ .m.Identifier }}" class="menu-entry{{ if not .m.HasChildren }} leaf{{ else }} branch {{ end }}{{ if .p.IsMenuCurrent "main" .m }} current is-open{{ end }}{{ if .p.HasMenuCurrent "main" .m }} has-current is-open{{ end }}">
+<li title="{{ printf "%s" .m.Name}}" class="menu-entry{{ if not .m.HasChildren }} leaf{{ else }} branch {{ end }}{{ if .p.IsMenuCurrent "main" .m }} current is-open{{ end }}{{ if .p.HasMenuCurrent "main" .m }} has-current is-open{{ end }}">
 
     <a href="{{ .m.URL }}" >
 		{{ if .m.HasChildren }}

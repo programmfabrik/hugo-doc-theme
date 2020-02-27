@@ -67,6 +67,7 @@ Folder fold/unfold
 })()
 
 document.addEventListener("DOMContentLoaded", function() {
+	var filter = ["apache", "apache2"];
 	var nodes = document.getElementsByTagName("code");
     Array.prototype.forEach.call(nodes, function(node) {
         node.value = node.textContent;
@@ -74,8 +75,17 @@ document.addEventListener("DOMContentLoaded", function() {
     	if (!mode) {
     		return
 		}
-		if (mode === "json") {
-            mode = "javascript"
+		
+		if (filter.some((_mode) => _mode == mode)) {
+			return;
+		}
+		
+		if (mode === "bash") {
+			mode = "shell"
+		} else if (mode === "json") {
+			mode = "javascript"
+		} else if (mode === "yml") {
+			mode = "yaml"
 		}
 
         CodeMirror.fromTextArea(node, {

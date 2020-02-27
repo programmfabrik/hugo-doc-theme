@@ -155,13 +155,15 @@ li.is-open > .sub-menu {
 	text-decoration: none;
 }
 
-.menu-entry a,
 .menu-entry span {
 	float: left;
+	max-width: calc(100% - 15px);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: clip ellipsis;
 }
 
 .menu-name {
-	text-overflow: ellipsis;
 	padding: 0 6px;
 }
 

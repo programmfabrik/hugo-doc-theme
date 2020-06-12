@@ -761,7 +761,7 @@ main .highlight pre {
 
 main .highlight pre,
 main pre {
-	overflow: auto;
+	overflow-y: inherit;
 	font-size: 85%;
 	line-height: 1.45;
 	background-color: #f6f8fa;
